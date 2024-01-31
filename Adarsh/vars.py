@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://hyper4stream:ashishvy123@cluster0.i8vytdk.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', ''))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'tv_hstream_Bot'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002134502479")).split())) 
